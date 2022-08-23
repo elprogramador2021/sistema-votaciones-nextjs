@@ -3,9 +3,9 @@ import Image from "next/image"
 import Header from "../components/Header"
 import Body from "../components/Body"
 import Footer from "../components/Footer"
-import Tarjeton from "../components/Tarjeton"
+import ListaCandidatos from "../components/ListaCandidatos"
 
-export default function Home() {
+const Candidatos = () => {
     return (
         <div className="flex flex-col h-screen justify-between">
             <Head>
@@ -15,9 +15,11 @@ export default function Home() {
             </Head>
             <Header />
             <Body>
-                <Tarjeton />
+                <ListaCandidatos />
             </Body>
             <Footer />
         </div>
     )
 }
+
+export default Candidatos
